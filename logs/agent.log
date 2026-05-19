@@ -1,0 +1,20 @@
+2026-05-19 05:56:38,867 | INFO | text_to_sql_agent | DECOMPOSITION_FALLBACK | How many shipped orders are from USA customers? | {'intent': 'Unknown or unsupported benchmark query', 'tables': [], 'columns': [], 'filters': [], 'joins': [], 'method': 'fallback_unknown', 'note': 'No exact benchmark rule found for: how many shipped orders are from usa customers'}
+2026-05-19 05:56:40,753 | INFO | text_to_sql_agent | DECOMPOSITION_FALLBACK | How many shipped orders are from USA customers? | {'intent': 'Unknown or unsupported benchmark query', 'tables': [], 'columns': [], 'filters': [], 'joins': [], 'method': 'fallback_unknown', 'note': 'No exact benchmark rule found for: how many shipped orders are from usa customers'}
+2026-05-19 05:59:37,711 | INFO | text_to_sql_agent | DECOMPOSITION | Total number of customers | {'intent': 'Count all customers', 'tables': ['customers'], 'columns': ['COUNT(customerNumber)'], 'filters': [], 'joins': [], 'method': 'benchmark_rule_bank'}
+2026-05-19 05:59:37,713 | INFO | text_to_sql_agent | SQL_GENERATION | Total number of customers | SELECT COUNT("customerNumber") AS total_customers FROM customers;
+2026-05-19 05:59:37,735 | INFO | text_to_sql_agent | SQL_EXECUTION_SUCCESS | attempt=1 | 20.47ms | SELECT COUNT("customerNumber") AS total_customers FROM customers;
+2026-05-19 05:59:37,735 | INFO | text_to_sql_agent | PIPELINE_OUTPUT | status=success | attempts=1 | question=Total number of customers
+2026-05-19 05:59:38,631 | INFO | text_to_sql_agent | DECOMPOSITION | Total number of customers | {'intent': 'Count all customers', 'tables': ['customers'], 'columns': ['COUNT(customerNumber)'], 'filters': [], 'joins': [], 'method': 'benchmark_rule_bank'}
+2026-05-19 05:59:38,632 | INFO | text_to_sql_agent | SQL_GENERATION | Total number of customers | SELECT COUNT("customerNumber") AS total_customers FROM customers;
+2026-05-19 05:59:38,638 | INFO | text_to_sql_agent | SQL_EXECUTION_SUCCESS | attempt=1 | 6.48ms | SELECT COUNT("customerNumber") AS total_customers FROM customers;
+2026-05-19 05:59:38,639 | INFO | text_to_sql_agent | PIPELINE_OUTPUT | status=success | attempts=1 | question=Total number of customers
+2026-05-19 06:00:17,187 | INFO | text_to_sql_agent | DECOMPOSITION | List all products | {'intent': 'Retrieve all product records', 'tables': ['products'], 'columns': ['*'], 'filters': [], 'joins': [], 'method': 'benchmark_rule_bank'}
+2026-05-19 06:00:17,188 | INFO | text_to_sql_agent | SQL_GENERATION | List all products | SELECT * FROM products;
+2026-05-19 06:00:17,199 | INFO | text_to_sql_agent | SQL_EXECUTION_SUCCESS | attempt=1 | 10.06ms | SELECT * FROM products;
+2026-05-19 06:00:17,199 | INFO | text_to_sql_agent | PIPELINE_OUTPUT | status=success | attempts=1 | question=List all products
+2026-05-19 06:31:40,275 | INFO | text_to_sql_agent | DECOMPOSITION_FALLBACK | list out all orders | {'intent': 'Unknown or unsupported benchmark query', 'tables': [], 'columns': [], 'filters': [], 'joins': [], 'method': 'fallback_unknown', 'note': 'No exact benchmark rule found for: list out all orders'}
+2026-05-19 06:31:49,498 | INFO | text_to_sql_agent | DECOMPOSITION_FALLBACK | list out all orders | {'intent': 'Unknown or unsupported benchmark query', 'tables': [], 'columns': [], 'filters': [], 'joins': [], 'method': 'fallback_unknown', 'note': 'No exact benchmark rule found for: list out all orders'}
+2026-05-19 06:32:31,728 | INFO | text_to_sql_agent | DECOMPOSITION | Total number of customers | {'intent': 'Count all customers', 'tables': ['customers'], 'columns': ['COUNT(customerNumber)'], 'filters': [], 'joins': [], 'method': 'benchmark_rule_bank'}
+2026-05-19 06:32:31,731 | INFO | text_to_sql_agent | SQL_GENERATION | Total number of customers | SELECT COUNT("customerNumber") AS total_customers FROM customers;
+2026-05-19 06:32:31,738 | INFO | text_to_sql_agent | SQL_EXECUTION_SUCCESS | attempt=1 | 6.93ms | SELECT COUNT("customerNumber") AS total_customers FROM customers;
+2026-05-19 06:32:31,739 | INFO | text_to_sql_agent | PIPELINE_OUTPUT | status=success | attempts=1 | question=Total number of customers
